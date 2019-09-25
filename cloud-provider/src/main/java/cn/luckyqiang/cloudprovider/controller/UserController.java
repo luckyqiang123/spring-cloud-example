@@ -4,6 +4,8 @@ import cn.luckyqiang.cloudapi.BO.UserServiceBO;
 import cn.luckyqiang.cloudapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -20,7 +22,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/{userId}")
+    @ResponseBody
+    @RequestMapping("deal/{userId}")
     public List<UserServiceBO> getAllUser(String userId) {
         List<UserServiceBO> userServiceBOList = userService.getUserAddressList(userId);
         return userServiceBOList;
