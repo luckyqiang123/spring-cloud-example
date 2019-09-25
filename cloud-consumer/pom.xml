@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.luckyqiang</groupId>
-    <artifactId>cloud-provider</artifactId>
+    <artifactId>cloud-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-provider</name>
-    <description>cloud-provider</description>
+    <name>cloud-consumer</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,7 +30,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
         <dependency>
@@ -52,7 +51,6 @@
             <artifactId>cloud-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
 
     </dependencies>
 
